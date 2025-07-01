@@ -135,7 +135,7 @@ public class InventoryController {
     @GetMapping("/product-details/{productId}")
     public ResponseEntity<?> getProductDetailsFromProductService(@PathVariable Long productId) {
         try {
-            // ⚠️ Asegúrate de hacer cast si estás usando la interfaz como tipo
+            
             ProductDTO product = ((InventoryServiceImpl) service).getProductDetails(productId);
             return ResponseEntity.ok(product);
         } catch (Exception e) {

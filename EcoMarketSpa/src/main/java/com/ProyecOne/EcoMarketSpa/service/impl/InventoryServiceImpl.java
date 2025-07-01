@@ -33,7 +33,7 @@ public class InventoryServiceImpl implements InventoryService {
         return restTemplate.getForObject(url, ProductDTO.class);
     }
 
-    // --- lo demás de tu clase sigue igual ---
+  
     
     @Override
     public Inventory createInventory(Inventory inventory) {
